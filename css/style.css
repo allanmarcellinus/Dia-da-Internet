@@ -73,9 +73,8 @@ header{
 .central h4{
     font-size: 12px;
 }
-.central button{
-    
-}
+
+
 .central  a{
     text-decoration: none;
     color: white ;
@@ -119,23 +118,60 @@ footer{
 
 .apresentação_futuro {
     color: #ffffff;
+    margin-bottom: -40px;
+    position: relative;
+    top: 750px;
+
 }
 
 .apresentação_futuro h1 {
-    font-family: Protest Strike;
-    text-shadow: 10px;
+    font-family: "Protest Strike", sans-serif;
     text-align: center;
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.4), 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
-
 .apresentação_futuro p {
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 220px;
+    font-size: 29px;
+    margin-top: 160px;
+ 
 }
 
 .apresentação_futuro span {
     font-weight: bold;
+}
+
+.imagem_apresentacao {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imagem_apresentacao img {
+    width: 1200px;
+    height: 323;
+    align-items: center;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+
+
+}
+
+.imagem1_futuro {
+    display: flex;
+    flex-direction: column;
+    background-color: #326173;
+
+}
+
+.imagem1_futuro img {
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
 }
 
