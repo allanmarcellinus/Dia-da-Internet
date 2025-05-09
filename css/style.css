@@ -4,14 +4,12 @@
 html, body{
     padding: 0;
     margin: 0;
-    
 }
 
 header{
     padding: 0;
     margin: 0;
     width: 100%;
-    background: url('../img/fundo.mp4');
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -105,6 +103,49 @@ header{
     height: 600px;
     object-fit: cover;
     z-index: -1;
+}
+.vicios-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+    margin: 0;
+}
+.vicios-banner a{
+    font-size: 40px;
+}
+.vicios-titulo{
+    font-family: Protest Strike;
+    font-size: 64px;
+    font-style: normal;
+}
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.vicios-banner{
+    display: flex;
+    font-family: Protest strike;
+    align-items: center;
+    font-size: 25px;
+    gap: 30px;
+}
+.vicios-banner img{
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.vicios-texto{
+    width: 60%;
+    font-family: poppins;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 footer{
     background-color: aquamarine;
