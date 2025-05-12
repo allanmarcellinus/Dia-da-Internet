@@ -377,3 +377,122 @@ footer{
     color: white;
     font-family: Arial, sans-serif;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .topo, .curiosidades {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .historia-texto {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .historia-texto h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .historia-texto p {
+    background-color: #003954;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .historia-img {
+    max-width: 500px;
+    text-align: right;
+  }
+  
+  .curiosidades-texto {
+    flex: 1;
+    max-width: 550px;
+  }
+  
+  .curiosidades-texto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .curiosidades-texto ol {
+    font-size: 16px;
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+  
+  .curiosidades-texto ol li {
+    margin-bottom: 10px;
+  }
+  
+  .curiosidades-img {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .curiosidades-img img {
+    border-radius: 10px;
+  }
+  
+  .final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #003954;
+    padding: 40px 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .final-text {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 40px;
+    text-align: left;
+    align-self: flex-start;
+  }
+  
+  .icones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .icones::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 250px;
+    height: 100px;
+    background-image: url('./img/setas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  
+  .icones img {
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
