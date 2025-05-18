@@ -1,339 +1,334 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>Dia da Internet</title>
     <link rel="stylesheet" href="./css/style.css">
-   
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/7473101c-db4c-41a8-9187-7628a4bec7ba 2.jpg" alt="Logo Do Site">
-        </div>
-        <button><strong>Início</strong></button>
-        <button><strong>História</strong></button>
-        <button><strong>Futuro</strong></button> 
-        <button><strong>Segurança</strong></button>
-    </header>    
-    
+        <nav class="menu-master">
+            <a href="" class="itnd-logo"><img src="./img/itnd-logo.png" alt=""></a>
+            <ul>
+                <li><a href="">Início</a></li>
+                <li><a href="">História da Internet</a></li>
+                <li><a href="">Futuro da Internet</a></li>
+                <li><a href="">Segurança da Informacao</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-mobile">
+            <a href="" class="itnd-logo"><img src="./img/itnd-logo.png" alt=""></a>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Historia</a></li>
+                <li><a href="">Futuro</a></li>
+                <li><a href="">Seguranca</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section class="video-container">
-            <video class="video-fundo" autoplay loop muted>
-                <source src="./img/fundo.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            <div class="conteudo">
-                <h1>Dia da Internet</h1>
-                <h4>Conectando o mundo, transformando o futuro.</h4> <!-- corrigido "transforando" -->
-                <a href="#"><strong>Saber mais</strong></a>
-            </div>
-
-            <div class="imagens-tema">
-                <a href="#" class="link" data-targent="historia-texto">
-                    <img src="./img/card1.png" alt=" História da Internet">
-                    <button href="historia-internet"> Veja Agora</button>
-                </a>
-                <a href="#" class="link" data-targent="impacto">
-                    <img src="./img/card2.png" alt="Impacto Na Sociedade">
-                    <p></p>
-                    <button href=""> Veja Agora</button>
-                </a>
-                <a href="#" class="link" data-targent="vicios-container">
-                    <img src="./img/card3.png" alt=" Vicíos Impostos Pela Internet">
-                    <button href="vicios-internet"> Veja Agora</button>
-                </a>
-                <a href="#" class="link" data-targent="seguranca">
-                    <img src="./img/card4.png" alt=" Segurança da Internet">
-                    <button href="seguranca-imagem"> Veja Agora</button>
-                </a>
-                <a href="#" class="link" data-targent="futuro">
-                    <img src="./img/card.png" alt=" Futuro da INternet">
-                    <button href="futuro-internet"> Veja Agora</button>
-                </a>
-            </div>
-        <section class="topo">
-            <div id="historia-texto" class="historia-texto">
-                <h1>História da Internet</h1>
-                <p>
-                    A internet surgiu nos anos 60 como ARPANET, evoluiu nos anos 70 com o protocolo TCP/IP em 1983,
-                    expandiu-se nos anos 80 no meio acadêmico e chegou ao Brasil em 1988. Tornou-se popular nos anos 90
-                    com a criação da Web por Tim Berners-Lee.
-                </p>
-            </div>
-            <div class="historia-img">
-                <img src="./img/IMG 1.png" alt="Imagem histórica da Internet">
+        <section class="introduction">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./img/fundo.mp4" type="video/mp4">
+                </video>
+                <div class="title-introduction">
+                    <h1>Dia da Internet</h1>
+                    <p>Conectando o mundo, transformando o futuro</p>
+                </div>
+                <a href="">Saber mais</a>
             </div>
         </section>
-             
-        <section class="curiosidades">
-            <div class="curiosidades-texto">
-                <h2>Algumas curiosidades da Internet!</h2>
-            
-                <ol>
-            
-                    <li>O primeiro e-mail da história foi enviado por Ray Tomlinson em 1971 e continha apenas a sequência “QWERTYUIOP”.</li>
-                    <li>O primeiro vídeo do YouTube foi publicado em 2005 e se chama “Me at the zoo”. Ele ainda está no ar.</li>
-                    <li>A WWW (World Wide Web) foi inventada por Tim Berners-Lee em 1989 e o primeiro site do mundo ainda está online: info.cern.ch.</li>
-                    <li>A internet chegou ao Brasil em 1988, conectando a UFRJ à Universidade de Maryland (EUA), mas só se popularizou nos anos 90.</li>
-                    <li>O Google nasceu como um projeto de faculdade de dois estudantes (Larry Page e Sergey Brin) e no início era hospedado no servidor de um amigo.</li>
-                    <li>O termo “meme” foi criado antes da internet existir, pelo biólogo Richard Dawkins, mas se viralizou com ela.</li>
-                    <li>A internet “não tem dono” – ela é formada por milhões de redes interligadas, administradas por diferentes organizações no mundo todo.</li>
-                </ol>
-            
-            </div>
-            <div class="curiosidades-img">
-                <img src="./img/img 2.png" alt="Linha do tempo da internet">
-            </div>
-        </section>
+        <section class="apresentacao">
+            <div class="buttons-container">
+                <a href="#historia" class="card">
+                  <img src="./img/historia-internet-card.png" alt="História da Internet">
+                  <p>História da internet</p>
+                  <span>Ver agora</span>
+                </a>
               
-        <section class="final">
-            <h2 class="final-text">
-                    Nos anos 2000, a banda larga popularizou o uso da internet, impulsionando redes sociais como Facebook e YouTube, além da expansão de serviços como o Google.
-            </h2>
-                
-            <div class="icones">
-                <img src="./img/IMG 5.png" alt="Facebook">
-                <p><img src="./img/IMG 3.png" alt="YouTube"></p>
-                <img src="./img/IMG 4.png" alt="">
-            </div>
-        </section>
-            
-
-        <section id="impacto" class="impacto">
-            <h1 class="impactos"> Impactos Negativos  <span class="shiss">X</span>  Impactos Positivos</h1>
-    
-            <div class="negativo">
-                <p class="paragrafo">Privacidade e segurança – Com o aumento do uso da internet,<br> dados pessoais ficam mais expostos,<br> o que pode levar a vazamentos de informações,<br> golpes virtuais e uso indevido de dados por empresas e hackers.</p>
-                <img src="./img/impactos_negativos.png" alt="Impactos Negativos">
-                <p class="grafico1">Vaultone, 2024.s</p>
-            </div>
-    
-            <div class="positivos">
-                <p>Oportunidades de trabalho e empreendedorismo<br>A internet possibilitou o surgimento de novas profissões,<br>o trabalho remoto e o crescimento de pequenos negócios online,<br>permitindo que mais pessoas empreendam e tenham renda sem sair de casa.</p>
-                <img src="./img/impactos_positivos.png" alt="Impactos Positivos">
-                <p class="grafico2">agenciabrasil, 2024.</p>
-            </div>
-        </section>
-
-        <section class="exemplo_de_vazamento">
-            <h1>Um exemplo real de vazamento de dados</h1>
-            <div class="exemplo">
-                <p>A Cambridge Analytica coletou dados de mais de 87 milhões de usuários do Facebook sem consentimento, usando um app de quiz que acessava informações dos usuários e seus amigos. Esses dados foram usados para criar perfis psicológicos e influenciar eleições, como o Brexit e a presidencial dos EUA em 2016.</p>
-            </div>
-                
-            <h1>Consequência</h1>
-            <div class="consequencia">
-                <p>O escândalo gerou revolta global sobre privacidade online.
-                        O CEO do Facebook, Mark Zuckerberg, teve que depor no Congresso dos EUA.
-                        A empresa foi multada em US$ 5 bilhões pela FTC (Federal Trade Commission).</p>
-            </div>
-            </section>
-       
-        <section id="vicios-container" class="vicios-container">
-                <p class="vicios-titulo">Tipos de Vícios</p>
-                <div class="vicios-banner">
-                    <img src="./img/vicios-image1.jpeg" alt="Imagem 1">
-                    <p>Vícios em redes sociais</p>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-                <div class="vicios-texto">
-                    <p>As redes sociais são projetadas para serem altamente viciantes, com notificações constantes e um fluxo contínuo de conteúdo. O "like", o "comentário" e as visualizações geram uma sensação de recompensa, o que leva os usuários a buscar mais atenção e validação, frequentemente.</p>
-                </div>
-                <div class="vicios-banner">
-                    <p>Vício em jogos online</p>
-                    <img src="./img/vicios-image2.jpeg" alt="Imagem 2">
-                </div>
-                <div class="vicios-texto">
-                    <p>Jogos como MMORPGs (jogos de RPG online massivos) e outros jogos competitivos podem consumir horas e horas do tempo de um indivíduo, levando-o a negligenciar responsabilidades e interações sociais no mundo real.</p>
-                </div>
-                <div class="vicios-banner">
-                    <img src="./img/vicios-image3.jpeg" alt="Imagem 3">
-                    <p>Vício em compras online</p>
-                </div>
-                <div class="vicios-texto">
-                    <p>A facilidade de comprar produtos a qualquer momento, sem sair de casa, pode levar algumas pessoas a desenvolverem compulsão por compras, sem controle sobre os gastos.</p>
-                </div>
-        </section>
-
-        <section id="seguranca" class="seguranca"\>
-            <div id="titulo-destaque">
-                <h2>Como é feita sua segurança?</h2>
-            </div>
-
-            <div class="video_seguranca">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nZkw0KxI_N8?si=LgDWgiZzDNCofLnl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="dica-container">
-                <div class="caixa">
-                  <p class="subtitulo">1. Criptografia: O Guardião das Suas Informações</p>
-                  <p>A criptografia protege suas conversas no WhatsApp e dados na internet, transformando as informações em códigos que só podem ser lidos com a chave certa. Sites com “https://” usam essa tecnologia para garantir uma comunicação segura.</p>
-                </div>
-          
-                <div class="caixa">
-                  <p class="subtitulo">2. Autenticação: Protegendo a Porta de Entrada</p>
-                  <p>A senha é como a chave de um castelo, mas sozinha não garante total segurança. A autenticação multifatorial reforça a proteção exigindo outro fator de identificação, como um código no celular, rosto ou digital, garantindo que só você acesse suas informações.</p>
-                </div>
-          
-                <div class="caixa">
-                  <p class="subtitulo">3. Firewall: A Muralha Virtual</p>
-                  <p>O firewall funciona como um bloqueio de castelo, protegendo seu computador e rede. Ele monitora o tráfego de dados, impedindo acessos não autorizados e identificando ameaças em tempo real, como ataques DDoS que tentam sobrecarregar e derrubar sites.</p>
-                </div>
+                <a href="#impactos" class="card">
+                  <img src="./img/Evolucao_Primatas.png" alt="Impactos na Sociedade">
+                  <p>Impactos na sociedade</p>
+                  <span>Ver agora</span>
+                </a>
+              
+                <a href="#vicios" class="card">
+                  <img src="./img/vicios_apresentação.png" alt="Vícios">
+                  <p>Vícios</p>
+                  <span>Ver agora</span>
+                </a>
+              
+                <a href="#seguranca" class="card">
+                  <img src="./img/computador_seguraca.png" alt="Segurança da Informação">
+                  <p>Segurança da Informação</p>
+                  <span>Ver agora</span>
+                </a>
+              
+                <a href="#futuro" class="card">
+                  <img src="./img/futuro_apresentação.png" alt="Futuro da Internet">
+                  <p>Futuro da Internet</p>
+                  <span>Ver agora</span>
+                </a>
               </div>
-          
-              <div class="titulo-destaque">
-                Como se proteger virtualmente!
-              </div>
-          
-              <div class="lista-dicas">
+        </section>
+        <section class="apresentacao-2">
+            <div class="acaba-pfvr">
+                <div class="apresentacao-1-buttons">
+                    <h4>Quando o virtual consome o real.</h4>
+                    <p>e continua moldando o futuro</p>
+                    <button id="">Ver mais</button>
+                </div>
+                <div class="apresentacao-2-buttons">
+                    <h4>Proteger dados é proteger pessoas.</h4>
+                    <p>Porque por trás de cada dado, existe uma vida.</p>
+                    <button id="">Ver mais</button>
+                </div>
+            </div>
+            <div class="apresentacao-3-buttons">
+                <h4>Quando o virtual consome o real.</h4>
+                <p>E o limite entre homem e máquina se apaga.</p>
+                <button id="">Ver mais</button>
+            </div>
+            <div class="acaba-pfvr">
+                <div class="apresentacao-4-buttons">
+                    <h4>Conectados, mas mudados.</h4>
+                    <p>E o que era real virou código.</p>
+                    <button id="">Ver mais</button>
+                </div>
+                <div class="apresentacao-5-buttons">
+                    <h4>Entre o real e o virtual.</h4>
+                    <p>Habita o humano digital.</p>
+                    <button id="">Ver mais</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="historia-container">
+            <h1>Historia da Internet</h1>
+            <div class="historia-da-internet">
+                <img src="./img/historia-1.png" alt="">
+                <p>A internet surgiu nos anos 60 como ARPANET, evoluiu nos anos 70 com o protocolo TCP/IP em 1983, expandiu-se nos anos 80 no meio acadêmico e chegou ao Brasil em 1988. Tornou-se popular nos anos 90 com a criação da Web por Tim Berners-Lee.</p>
+            </div>
+            <div class="historia-curiosidades">
                 <div>
-                  <ul>
-                    <li class="errado">❌ Usar a mesma senha em vários sites</li>
-                    <li class="errado">❌ Clicar em links suspeitos ou desconhecidos</li>
-                    <li class="errado">❌ Ignorar atualizações de sistema e aplicativos</li>
-                    <li class="errado">❌ Usar Wi-Fi público sem proteção (como VPN) <br>
-                      <span style="font-size: 12px;"> para saber mais sobre o VPN <a href="https://www.kaspersky.com.br/resource-center/definitions/what-is-a-vpn" style="color: red; text-decoration: underline;"><b>clique aqui</b></a>
-                      </span></li>
-                    <li class="errado">❌ Desativar o antivírus ou firewall</li>
-                    <li class="errado">❌ Acreditar em tudo que vê na internet sem checar fontes</li>
-                    <li class="errado">❌ Baixar arquivos ou apps de fontes não confiáveis</li><br>
-                    <li class="certo">✔️ Use senhas fortes e diferentes <br> <span style="font-size: 12px;">para acessar um gerador de senhas <a href="https://www.lastpass.com/pt/features/password-generator" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
-                    </span></li>
-                    <li class="certo">✔️ Ative a autenticação em dois fatores (2FA)<br> <span style="font-size: 12px;">para saber mais sobre autenticação em dois fatores  <a href="https://www.lastpass.com/pt/features/password-generator" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
-                    </span></li>
-                    <li class="certo">✔️ Mantenha seus dispositivos atualizados</li>
-                    <li class="certo">✔️ Cuidado com links e e-mails suspeitos<br> <span style="font-size: 12px;">para saber como indentificar links e e-mails suspeitos  <a href="https://www.globalsign.com/pt-br/blog/onze-dicas-para-identificar-emails-maliciosos" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
-                    </span></li>
-                    <li class="certo">✔️ Use antivírus e firewall<br> <span style="font-size: 12px;">para saber mais sobre firewall <a href="https://www.kaspersky.com.br/resource-center/definitions/firewall" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
-                    </span></li>
-                    <li class="certo">✔️ Navegue por conexões seguras</li>
-                    <li class="certo">✔️ Controle sua privacidade</li>
-                    <li class="certo">✔️ Fique atento e bem-informado</li>
-        </section>
-
-        <section id="futuro" class="futuro">
-            <div class="apresentação_futuro">
-                <h1>COMO SE PREPARAR PARA O FUTURO <br>DA INTERNET?<br></h1>
-                <br>
-                <p>O futuro da internet será cada vez mais moldado por<br> tecnologias disruptivas como <span>inteligência artificial,<br>blockchain, automação e realidade aumentada</span>. Essas <br> inovações estão transformando o modo como trabalhamos, <br> nos comunicamos e consumimos informação. Para <br>acompanhar esse ritmo acelerado de mudanças, o <br>conhecimento se torna a principal ferramenta de<br> preparação.</p>
+                    <h2>Algumas curiosidades da Internet!</h2>
+                    <p>1. O primeiro e-mail da história foi enviado por Ray Tomlinson em 1971 e continha apenas a sequência “QWERTYUIOP”.</p>
+                    <p>2.  O primeiro vídeo do YouTube foi publicado em 2005 e se chama “Me at the zoo”. Ele ainda está no ar.</p>
+                    <p>3. WWW (World Wide Web) foi inventada por Tim Berners-Lee em 1989 e o primeiro site do mundo ainda está online: info.cern.ch.</p>
+                    <p>4. A internet chegou ao Brasil em 1988, conectando a UFRJ à Universidade de Maryland (EUA), mas só se popularizou nos anos 90.</p>
+                    <p>5. O Google nasceu como um projeto de faculdade de dois estudantes (Larry Page e Sergey Brin) e foi hospedado, no início, na garagem de um amigo.</p>
+                    <p>6. O termo “meme” foi criado antes da internet existir, pelo biólogo Richard Dawkins, mas só viralizou com ela.</p>
+                    <p>7. A internet “não tem dono” – ela é formada por milhões de redes interligadas, administradas por diferentes organizações no mundo todo.</p>
+                </div>
+                <img src="./img/historia_imagem2.png" alt="">
             </div>
-
-            <div class="imagem_apresentacao">
-                <img src="./img/imagem_futuro.jpg" alt="apresentação_futuro">
+            <div class="historia-arrows-container">
+                <p>Nos anos 2000, a banda larga popularizou o uso da internet, impulsionando redes sociais como Facebook e YouTube, além da expansão de serviços como o Google.</p>
+                <div class="historia-arrows">
+                    <img src="./img/Seta_icon1.png" alt="">
+                    <img src="./img/Facebook_icon.png" alt="" class="facebook-youtube">
+                    <img src="./img/seta-icon-2.png" alt="">
+                    <img src="./img/youtube_icon.png" alt="" class="facebook-youtube">
+                </div>
             </div>
-
-        
-            <div class="imagem1_futuro">
-                <img src="./img/futuro1.png" alt="Imagem do Futuro da INternet">
-                <img src="./img/futuro2.png" alt="Imagem do Futuro da INternet">
+            <div class="historia-video">
+                <iframe src="https://www.youtube.com/embed/taTmpYQ_3jk?si=eFAbNGigyNiwex0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+            <div class="historia-grafico">
+                <p>Atualmente, a internet cresce com IA, VR e 5G, tornando-se mais rápida e inteligente, ampliando usos em negócios, comunicação e entretenimento, com mais de 5 bilhões de pessoas conectadas.</p>
+                <img src="./img/grafico.png" alt="">
 
-            <div class="texto1_futuro">
-                <p>IA, liderança digital, inteligência emocional e aprendizado<br>contínuo serão as habilidades mais valorizadas até 2025.</p>
-            </div>
-
-            <div class="texto2_futuro">
-                <p>A alfabetização digital é essencial para usar a tecnologia com segurança,<bR>identificar fake news e agir com responsabilidade,<bR>fortalecendo a cidadania e a empregabilidade.</p>
-            </div>
-
-            <div class="imagem2_futuro">
-                <img src="./img/futuro3.png" alt="Imagem sobre soft skills">
-            </div>
-
-            <div class="texto2_futuro">
-                <p>Soft skills como empatia,criatividade<br> e pensamento crítico serão essenciais na era da automação.</p>
-                <br>
-                <p>Unir técnica e sensibilidade humana impulsiona inovação,<br>solução de problemas e liderança com propósito.</p>
             </div>
         </section>
-
-
+        <section class="impactos">
+            
+            <div class="titulo-impactos">
+                <h1>Impactos na sociedade </h1>
+            </div>
+            <div class="impactos-3">
+                
+                <div class="card-left">
+                    <H1>Impactos Negativos</H1>
+                    <div class="mold">
+                        <p>Privacidade e segurança – Com o aumento do uso da internet, dados pessoais ficam mais expostos, o que pode levar a vazamentos de informações, golpes virtuais e uso indevido de dados por empresas e hackers.</p>
+                        <img src="./img/impactos_1.png" alt="">
+                        <h3>Vaultone, 2024.</h3>
+                    </div>
+                </div>
+                <div class="seperacao">
+                    <img src="./img/X.png" alt="">
+                </div>
+                <div class="card-rigth">
+                    <H1>Impactos Positivos</H1>
+                    <div class="mold">
+                        <p>Oportunidades de trabalho e empreendedorismo – A internet possibilitou o surgimento de novas profissões, o trabalho remoto e o crescimento de pequenos negócios online, permitindo que mais pessoas empreendam e tenham renda sem sair de casa.</p>
+                        <img src="./img/impactos-positivos.png" alt="">
+                        <h3>agenciabrasil, 2024.</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="titulo-impactos">
+                <h1>Um exemplo real de vazamento de dados</h1>
+            </div>
+            <div class="last-card">
+                <div class="last-card1">
+                    <h2>Facebook e Cambridge Analytica (2018)</h2>
+                    <p>A Cambridge Analytica coletou dados de mais de 87 milhões de usuários do Facebook sem consentimento, usando um app de quiz que <br> acessava informações dos usuários e seus amigos. Esses dados foram usados para criar perfis psicológicos e influenciar eleições,<br> como o Brexit e a presidencial dos EUA em 2016.</p>
+                </div>
+                <div class="last-card2">
+                    <h2>Consequências</h2>
+                    <p>O escândalo gerou revolta global sobre privacidade online.O CEO do Facebook, Mark Zuckerberg,<br> teve que depor no Congresso dos EUA.A empresa foi multada em US$ 5 bilhões pela FTC (Federal Trade Commission).</p>
+                </div>
+            </div>
+        </section>
+        <section class="vicios-container">
+            <p class="vicio-title">Tipos de Vício</p>
+            <div class="banner-vicios-container">
+                <img src="./img/vicios-redes-sociais.png" alt="Imagem">
+                <p class="vicio-subtitle">Vícios em redes sociais</p>
+                
+            </div>
+            <p class="vicio-text">As redes sociais são projetadas para serem altamente viciantes, com notificações constantes e um fluxo contínuo de conteúdo. O "like", o "comentário" e as visualizações geram uma sensação de recompensa, o que leva os usuários a buscar mais atenção e validação, frequentemente.</p>
+            <div class="banner-vicios-container">
+                <p class="vicio-subtitle">Vícios em redes sociais</p>
+                <img src="./img/Vicios_2.png" alt="Imagem">
+            </div>
+            <p class="vicio-text">Jogos como MMORPGs (jogos de RPG online massivos) e outros jogos competitivos podem consumir horas e horas do tempo de um indivíduo, levando-o a negligenciar responsabilidades e interações sociais no mundo real.</p>
+            <div class="banner-vicios-container">
+                <img src="./img/vicios-compra-online.png" alt="Imagem">
+                <p class="vicio-subtitle">Vícios em redes sociais</p>
+            </div>
+            <p class="vicio-text">A facilidade de comprar produtos a qualquer momento, sem sair de casa, pode levar algumas pessoas a desenvolverem compulsão por compras, sem controle sobre os gastos.</p>
+        </section>
+        <section class="segurança">
+            <div class="titulo-seguranca">
+                <h1>Como é feita sua segurança?</h1>
+            </div>
+            <div class="video-seguranca">
+                <iframe src="https://www.youtube.com/embed/nZkw0KxI_N8?si=uVdaR4pNJ8YxQ92G&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="conteudo-seguranca">
+                <div class="card1">
+                    <div class="mold1">
+                        <h2>1.Criptografia: O Guardião das Suas Informações:</h2>
+                    <p>A criptografia protege suas conversas no WhatsApp e dados na internet, transformando as informações em códigos que só podem ser lidos com a chave certa. Sites com “https://” usam essa tecnologia para garantir uma comunicação segura.</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="mold1">
+                        <h2>2.Autenticação: Protegendo a Porta de Entrada</h2>
+                        <p>A senha é como a chave de um castelo, mas sozinha não garante total segurança. A autenticação multifatorial reforça a proteção exigindo outro fator de identificação, como um código no celular, rosto ou digital, garantindo que só você acesse suas informações.</p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="mold1">
+                        <h2>3. Firewall: A Muralha Virtual</h2>
+                        <p>O firewall funciona como um bloqueio de castelo, protegendo seu computador e rede. Ele monitora o tráfego de dados, impedindo acessos não autorizados e identificando ameaças em tempo real, como ataques DDoS que tentam sobrecarregar e derrubar sites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="full-card">
+                <img src="./img/Untitled.png" alt="">
+            </div>
+        </section>
     </main>
     <footer>
-        <section class="apresentacao">
-            <div class="separar">
-                <div class="left">
-                    <h1>Sala Desenvolvimento de Sistemas</h1>
-                    <p>Nossa sala é formada por apenas 11 alunos mas nem por isso deixamos <br> de entregar a qualidade  em nossos projetos. 3D a melhor sala do Antonieta Borges!</p>
-                </div>
-                <div class="rigth">
-                    <img src="./img/img sala 2.png" alt="">
-                </div>
+        <div class="classroom-description">
+            <div class="footer-text">
+                <h2>Sala Desenvolvimento de Sistemas</h2>
+                <p>Nossa sala é formada por apenas 11 alunos mas nem por isso deixamos de entregar a qualidade em nossos projetos. 3D a melhor sala do Antonieta Borges!
+                </p>
             </div>
-            <div class="titulo-colaboradores">
-                <h1>Colaboradores</h1>
+            <img src="./img/sala-imagem.png" alt="">
+        </div>
+        <h2>Colaboradores</h2>
+        <div class="colaboradores-container">
+            <div class="colaboradores">
+                <img src="./img/Allan_Foto.png" alt="">
+                <p>Allan Marcelino</p>
             </div>
-            <div class="participantes">
-                <div class="participantes-container">
-                    <img src="./img/Allan_Foto.png" alt="Foto Allan"> <p>Allan Marcelino</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Eduardo_Foto.png" alt="Foto Eduardo"> <p>Eduardo Marques</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Filipi_Foto.png" alt="Foto Filipi"><p>Fiilippi Denner</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Ismael_Foto.png" alt="Foto Ismael"><p>Ismael Laurentino</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Joao_Foto.png" alt="Foto Joao"><p>João Pedro</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Kaue_Foto.png" alt="Foto Kaue"><p>Kauê Yuuki</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Maria_Foto.png" alt="Foto Maria"><p>Maria Clara</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Patricia_Foto.png" alt="Foto Patricia"><p>Patrícia Dias</p>
-                </div>
-                <div class="participantes-container">
-                   <img src="./img/Paulo_Foto.png" alt="Foto Paulo"><p>Paulo Ricardo</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Pedro_Foto.png" alt="Foto Pedro"><p>Pedro Henrique</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Raul_Foto.png" alt="Foto Raul"><p>Raul Lucena</p>
-                </div>
-                <div class="participantes-container">
-                    <img src="./img/Samuel_Foto.png" alt="Foto Samuel"><p>Samuel Brito</p>
-                </div>
+            <div class="colaboradores">
+                <img src="./img/Eduardo_Foto.png" alt="">
+                <p>Eduardo Marques</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Filipi_Foto.png" alt="">
+                <p>Filippi Denner</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Ismael_Foto.png" alt="">
+                <p>Ismael Laurentino</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Joao_Foto.png" alt="">
+                <p>Joao Pedro</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Kaue_Foto.png" alt="">
+                <p>Kaue Yuuki</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Maria_Foto.png" alt="">
+                <p>Maria Clara</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Patricia_Foto.png" alt="">
+                <p>Patricia Dias</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Paulo_Foto.png" alt="">
+                <p>Paulo Ricardo</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Pedro_Foto.png" alt="">
+                <p>Pedro Henrique</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Raul_Foto.png" alt="">
+                <p>Raul Lucena</p>
+            </div>
+            <div class="colaboradores">
+                <img src="./img/Samuel_Foto.png" alt="">
+                <p>Samuel Brito</p>
+            </div>
+        </div>
+        <div class="linha-footer"></div>
+        <div class="Internetday">
+            <div class="internetday-title">
+                <h1>InternetDay.</h1>
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Perguntas frequentes</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <button class="formBtn" id="formBtn">Para nos ajudar preencha o <strong>formulario</strong></button>
 
-                
             </div>
-            <div class="internetDAY">
-                <div class="left1">
-                    <h1><strong>InternetDay.</strong></h1>
-                    <ul>    
-                        <li><a href=""><strong>Sobre</strong></a></li>
-                        <li><a href=""><strong>Perguntas frequentes</strong></a></li>
-                        <li><a href=""><strong>Contato</strong></a></li>
-                    </ul>
-                </div>
-                <div class="right1">
-                    <a href="#">Para nos ajudar preencha o ‎ <strong>formulário</strong></a>
-                </div>
-                
+        </div>
+        <div class="linha-footer"></div>
+        <div class="footer-end">
+            <div class="policies">
+                <img src="./img/logo_sala.png" alt="">
+                <ul>
+                    <li><a href="">Politica de privacidade</a></li>
+                    <li><a href="">Termos</a></li>
+                </ul>
             </div>
-            <div class="pontos">
-                <p><strong>......................................................................................................................................................................................................................................................................................................</strong></p>
+            <div class="social-media">
+                <ul>
+                    <li><strong>Redes:</strong></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Tiktok</a></li>
+                    <li><a href="">Linkedin</a></li>
+                </ul>
+                <img src="./img/logo_escola.png" alt="">
             </div>
-            <div class="rodape">
-                <img src="./img/logo_sala.png" alt="logo da sala">
-                <a href="">Politica de privacidade</a>
-                <a href="">Termos</a>
-                <p><strong>Redes:</strong></p>
-                <a href="">Instagram</a>
-                <a href="">Tiktok</a>
-                <a href="">Linkedin</a>
-                <img class="escola" src="./img/logo_escola.png" alt="logo da escola">
-            </div>
-        </section>
-       
+        </div>
     </footer>
 </body>
 </html>
