@@ -343,7 +343,6 @@ main{
     font-size: 25px;
     font-weight: 600;
 }
-
 .historia-curiosidades{
     width: 100%;
     display: flex;
@@ -351,7 +350,7 @@ main{
     justify-content: space-between;
 }
 .historia-curiosidades img{
-    height: 650px;
+    max-height: 650px;
 }
 .historia-curiosidades div h2{
     color: white;
@@ -803,13 +802,13 @@ main{
     
 }
 .imagens-futuro-text{
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
 }
 .imagens-futuro-text div{
-    max-width: 700px;
     max-height: 280px;
     display: flex;
     background-color: #326173;
@@ -833,7 +832,7 @@ main{
 
 .blockchain {
     height: 475px;
-    width: 310px;
+    max-width: 310px;
 }
 .soft-skills{
     width: 90%;
