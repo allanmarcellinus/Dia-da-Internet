@@ -10,6 +10,7 @@ body{
 }
 header{
     width: 100%;
+    padding-top: 15px;
     height: 10vh;
     display: flex;
     position: absolute;
@@ -55,6 +56,7 @@ header{
 .menu-master ul li a{
     color: white;
     text-decoration: none;
+    cursor: pointer;
     transition: 0.3s ease-in;
 }
 .menu-master ul li a:hover{
@@ -69,7 +71,7 @@ header{
     opacity: 0.5;
 }
 .itnd-logo img{
-    width: 50px;
+    width: 70px;
 }
 main{
     display: flex;
@@ -106,20 +108,20 @@ main{
     font-family: Poppins;
 }
 .title-introduction h1{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 800;
     margin: 0;
 }
 .title-introduction p{
     margin-top: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
-.video-container a{
+.video-container button{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: #7EADBF;
+    background-color: #022840;
     border: none;
     border-radius: 40px;
     color: white;
@@ -129,9 +131,10 @@ main{
     font-size: 15px;
     font-weight: 800;
     margin-top: 30px;
+    cursor: pointer;
     transition: 0.3s ease-in;
 }
-.video-container a:hover{
+.video-container button:hover{
     filter:brightness(0.7);
 }
 
@@ -201,6 +204,7 @@ main{
     padding: 15px;
     border-radius: 40px;
     cursor: pointer;
+    font-weight: 600;
   }
   .apresentacao-2 div{
     border-radius: 20px;
@@ -210,6 +214,7 @@ main{
     font-family: poppins;
   }
   .apresentacao-2 h4{
+    margin-top: auto;
     color: white;
     text-shadow: 5px 5px 2px rgb(32, 32, 32);
     padding: 0;
@@ -218,7 +223,7 @@ main{
   }
   .apresentacao-5-buttons{
     height: 300px;
-    background: url(../img/Real_Virtual.png);
+    background: url(../img/apresentacao-5-image.jpg);
     width: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,13 +233,14 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding-top: 50px;
     grid-area: apresentacao-5-buttons;
   }
 
   .apresentacao-4-buttons{
     text-align: center;
     height: 300px;
-    background: url(../img/Pensador_Card.png);
+    background: url(../img/apresentacao-4-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,13 +249,16 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
     grid-area: apresentacao-4-buttons;
   }
   .apresentacao-3-buttons{
     text-align: center;
     height: 400px;
     width: 100%;
-    background: url(../img/vicio-card.png);
+    font-size: 20px;
+    padding-top: 50px;
+    background: url(../img/apresentacao-3-image.jpg);
     display: flex;
     margin-top: 50px;
     background-repeat: no-repeat;
@@ -264,7 +273,7 @@ main{
   .apresentacao-2-buttons{
     text-align: center;
     height: 300px;
-    background: url(../img/apresentacao-2-image.png);
+    background: url(../img/apresentacao-2-image.jpg);
     width: 50%;
     display: flex;
     background-repeat: no-repeat;
@@ -273,6 +282,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
     grid-area: apresentacao-2-buttons;
 
   }
@@ -280,7 +290,7 @@ main{
     text-align: center;
     height: 300px;
     width: 50%;
-    background: url(../img/apresentacao-1-image.png);
+    background: url(../img/apresentacao-1-image.jpg);
     display: flex;
     background-repeat: no-repeat;
     background-position: center;
@@ -288,6 +298,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
     grid-area: apresentacao-1-buttons;
   }
   .acaba-pfvr{
@@ -295,6 +306,9 @@ main{
     align-items: center;
     justify-content: center;
     gap: 30px;
+  }
+  .acaba-pfvr div{
+    font-size: 20px;
   }
 
 /* Historia */
@@ -331,7 +345,7 @@ main{
 }
 
 .historia-curiosidades{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -465,6 +479,7 @@ main{
 .mold{
     background-color: #000000;
     width: 70%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,19 +496,20 @@ main{
 .mold h3{
     margin-left: auto;
     margin-right: 30px;
-    margin-top: 30px;
+    margin-top: auto;
     color: white;
 }
 .seperacao{
-    
+    color: white;
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.seperacao img{
-    width: 150px;
-    height:150px;
+.seperacao h1{
+    padding: 0;
+    margin: 0;
+    font-size: 200px;
 }
 .last-card{
     background-color: rgb(0, 0, 0);
@@ -587,40 +603,45 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    padding: 20px;
 }
 .conteudo-seguranca{
     width: 100%;
+    justify-self: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
     margin-top: 40px;
+    margin-bottom: 60px;
+    gap: 20px;
 }
 .card1{
-    
-    width: 300px;
+    max-width: 300px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card2{
     
-    width: 300px;
+    max-width: 300px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card3{
     
-    width: 300px;
+    max-width: 300px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .mold1{
-    width: 100%;
     background-color: #011C26;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -634,47 +655,227 @@ main{
 }
 .mold1 p{
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
     font-family: poppins;
 }
 .video-seguranca{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-seguranca iframe{
+    width: 90%;
+    height: 450px;
     align-items: center;
     justify-content: center;
 }
 .titulo-seguranca{
-    justify-content: center;
+    width: 90%;
     display: flex;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     color: white;
-    width: 100%;
     font-size: 32px;
     font-family: poppins;
 }
-.full-card{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-}
-.full-card img{
-    position: absolute;
-    width: 45%;
-}
 .video-seguranca iframe{
-    width: 100%;
     border-radius: 20px;
 }
-.video-seguranca{
-    width: 90%;
+
+.lista-container{
+    background-color: #326173;
+    max-width: 700px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: protest strike;
+    color: white;
+    font-weight: 400;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
 }
+.lista-container h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.lista{
+    height: 600px;
+    display: flex;
+    gap: 20px;
+}
+.lista ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Futuro */
+
+.futuro {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+.apresentacao_futuro {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.apresentacao_futuro h1 {
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.4), 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.apresentacao_futuro p {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.apresentacao_futuro span {
+    font-weight: bold;
+}
+
+.imagem_apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.imagem_apresentacao img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height: 600px;
+    align-items: center;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+}
+
+.imagens_futuro {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.imagem1_futuro {
+    display: flex;
+    justify-self: left;
+    flex-direction: column;
+    background-color: #326173;
+    border-radius: 50px;
+}
+
+.imagem1_futuro img {
+    border-radius: 20px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 90%;
+    
+}
+.imagens-futuro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.imagens-futuro-text div{
+    max-width: 700px;
+    max-height: 280px;
+    display: flex;
+    background-color: #326173;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.imagens-futuro-text div p{
+    padding: 60px;
+    font-family: poppins;
+}
+
+
+.futuro_2 {
+    height: 475px;
+    width: 310px;
+    padding-bottom: 120px;
+
+}
+
+.blockchain {
+    height: 475px;
+    width: 310px;
+}
+.soft-skills{
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:  60px;
+}
+.soft-skills img{
+    height: 100%;
+    border-radius: 20px;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.soft-skills div{
+    background-color: #326173;
+    border-radius: 0px 20px 20px 0px;
+    height: 100%;
+    width: 50%;
+    margin-left: -15px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+.soft-skills div p{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+
+    padding: 20px;
+    margin-left: 15px;
+}
+
 
 
 footer{
-    background-color: #211E1E;
+    background-color: #011C26;
     color: white;
     display: flex;
     flex-direction: column;
@@ -706,6 +907,7 @@ footer{
 }
 .classroom-description img{
     width: 500px;
+    border-radius: 20px;
 }
 .colaboradores-container{
     width: 90%;
@@ -760,8 +962,19 @@ footer{
     text-decoration: none;
     color: white;
 }
-
+.footer-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .formBtn{
+    background-color: #D9D9D9;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
     font-family: poppins;
     width: 500px;
     height: 60px;
@@ -816,6 +1029,60 @@ footer{
 .social-media ul li a{
     text-decoration: none;
     color: white;
+}
+@media (max-width: 1230px){
+    .historia-da-internet{
+        flex-direction: column;
+    }
+    .historia-da-internet img{
+        width: 100%;
+    }
+    .historia-da-internet p{
+        width: 100%;
+    }
+    .historia-curiosidades{
+        width: 100%;
+        flex-direction: column;
+    }
+    .historia-curiosidades div p{
+        width: 100%;
+
+    }
+    .historia-arrows-container p{
+        width: 100%;
+        font-size: 15px;
+    }
+    .historia-arrows img{
+        width: 80px;
+    }
+    .historia-grafico p{
+        font-size: 14px;
+        width: 70%;
+    }
+    .soft-skills div p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 945px){
+    .seguranca{
+        width: 80%;
+    }
+    .footer-form{
+        width: 100%;
+        flex-direction: column;
+    }
+    .formBtn{
+        width: 100%;
+    }
+    .apresentacao_futuro p{
+        font-size: 18px;
+    }
+    .imagem_apresentacao img{
+        width: 90%;
+    }
+    .soft-skills div p{
+        font-size: 18px;
+    }
 }
 @media (max-width: 868px){
     /* header */
@@ -920,6 +1187,19 @@ footer{
         max-height: 90px;
         border-radius: 10px;
     }
+    /* Seguranca */
+    .lista ul li{
+        font-size: 18px;
+    }
+    .apresentacao_futuro h1{
+        font-size: 35px;
+    }
+    .apresentacao_futuro p{
+        padding: 30px;
+    }
+    .soft-skills div p{
+        font-size: 15px;
+    }
     /* footer */
     .classroom-description{
         display: flex;
@@ -929,7 +1209,11 @@ footer{
         width: 90%;
     }
     .colaboradores-container{
+        width: 90%;
+        display: grid;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
     }
     .Internetday{
         height: 300px;
@@ -947,5 +1231,53 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         height: 200px;
+    }
+}
+@media (max-width: 600px){
+    .acaba-pfvr div p{
+        padding: 20px;
+        font-size: 12px;
+    }
+    .acaba-pfvr div h4{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .apresentacao-3-buttons p{
+        padding: 20px;
+    }
+    .apresentacao-3-buttons h4{
+        padding: 10px;
+    }
+    .lista-container{
+        max-width: 90%;
+    }
+    .lista-container h3{
+        text-align: center;
+    }
+    .lista ul li{
+        font-size: 14px;
+    }
+    .apresentacao_futuro h1{
+        font-size: 27px;
+    }
+    .apresentacao_futuro p{
+        font-size: 15px;
+    }
+    .imagens-futuro-text p{
+        font-size: 12px;
+    }
+    .soft-skills{
+        height: 50vh;
+    }
+}
+@media (max-width: 540px){
+    .acaba-pfvr div p{
+        font-size: 10px;
+    }
+    .acaba-pfvr div h4{
+        font-size: 15px;
+    }
+    .soft-skills div p{
+        font-size: 12px;
     }
 }

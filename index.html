@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,19 @@
         <nav class="menu-master">
             <a href="" class="itnd-logo"><img src="./img/itnd-logo.png" alt=""></a>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">História da Internet</a></li>
-                <li><a href="">Futuro da Internet</a></li>
-                <li><a href="">Segurança da Informacao</a></li>
+                <li><a onclick="rolarParaBaixo()">Início</a></li>
+                <li><a onclick="rolarParaHistoria()">História da Internet</a></li>
+                <li><a onclick="rolarParaFuturo()">Futuro da Internet</a></li>
+                <li><a onclick="rolarParaSeguranca()">Segurança da Informacao</a></li>
             </ul>
         </nav>
         <nav class="menu-mobile">
             <a href="" class="itnd-logo"><img src="./img/itnd-logo.png" alt=""></a>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Historia</a></li>
-                <li><a href="">Futuro</a></li>
-                <li><a href="">Seguranca</a></li>
+                <li><a onclick="rolarParaBaixo()">Inicio</a></li>
+                <li><a onclick="rolarParaHistoria()">Historia</a></li>
+                <li><a onclick="rolarParaFuturo()">Futuro</a></li>
+                <li><a onclick="rolarParaSeguranca()">Seguranca</a></li>
             </ul>
         </nav>
     </header>
@@ -37,36 +37,36 @@
                     <h1>Dia da Internet</h1>
                     <p>Conectando o mundo, transformando o futuro</p>
                 </div>
-                <a href="">Saber mais</a>
+                <button onclick="rolarParaBaixo()">Saiba mais</button>
             </div>
         </section>
-        <section class="apresentacao">
+        <section class="apresentacao" id="apresentacao">
             <div class="buttons-container">
-                <a href="#historia" class="card">
+                <a class="card" onclick="rolarParaHistoria()">
                   <img src="./img/historia-internet-card.png" alt="História da Internet">
                   <p>História da internet</p>
                   <span>Ver agora</span>
                 </a>
               
-                <a href="#impactos" class="card">
+                <a onclick="rolarParaImpactos()" class="card">
                   <img src="./img/Evolucao_Primatas.png" alt="Impactos na Sociedade">
                   <p>Impactos na sociedade</p>
                   <span>Ver agora</span>
                 </a>
               
-                <a href="#vicios" class="card">
+                <a onclick="rolarParaVicios()" class="card">
                   <img src="./img/vicios_apresentação.png" alt="Vícios">
                   <p>Vícios</p>
                   <span>Ver agora</span>
                 </a>
               
-                <a href="#seguranca" class="card">
+                <a onclick="rolarParaSeguranca()" class="card">
                   <img src="./img/computador_seguraca.png" alt="Segurança da Informação">
                   <p>Segurança da Informação</p>
                   <span>Ver agora</span>
                 </a>
               
-                <a href="#futuro" class="card">
+                <a onclick="rolarParaFuturo()" class="card">
                   <img src="./img/futuro_apresentação.png" alt="Futuro da Internet">
                   <p>Futuro da Internet</p>
                   <span>Ver agora</span>
@@ -76,36 +76,36 @@
         <section class="apresentacao-2">
             <div class="acaba-pfvr">
                 <div class="apresentacao-1-buttons">
-                    <h4>Quando o virtual consome o real.</h4>
+                    <h4>A internet transformou o mundo</h4>
                     <p>e continua moldando o futuro</p>
-                    <button id="">Ver mais</button>
+                    <button id="" onclick="rolarParaImpactos()">Ver mais</button>
                 </div>
                 <div class="apresentacao-2-buttons">
                     <h4>Proteger dados é proteger pessoas.</h4>
                     <p>Porque por trás de cada dado, existe uma vida.</p>
-                    <button id="">Ver mais</button>
+                    <button id="" onclick="rolarParaSeguranca()">Ver mais</button>
                 </div>
             </div>
             <div class="apresentacao-3-buttons">
                 <h4>Quando o virtual consome o real.</h4>
                 <p>E o limite entre homem e máquina se apaga.</p>
-                <button id="">Ver mais</button>
+                <button id="" onclick="rolarParaVicios()">Ver mais</button>
             </div>
             <div class="acaba-pfvr">
                 <div class="apresentacao-4-buttons">
                     <h4>Conectados, mas mudados.</h4>
                     <p>E o que era real virou código.</p>
-                    <button id="">Ver mais</button>
+                    <button id="" onclick="rolarParaHistoria()">Ver mais</button>
                 </div>
                 <div class="apresentacao-5-buttons">
                     <h4>Entre o real e o virtual.</h4>
                     <p>Habita o humano digital.</p>
-                    <button id="">Ver mais</button>
+                    <button id="" onclick="rolarParaFuturo()">Ver mais</button>
                 </div>
             </div>
 
         </section>
-        <section class="historia-container">
+        <section class="historia-container" id="historia">
             <h1>Historia da Internet</h1>
             <div class="historia-da-internet">
                 <img src="./img/historia-1.png" alt="">
@@ -142,7 +142,7 @@
 
             </div>
         </section>
-        <section class="impactos">
+        <section class="impactos" id="impactos">
             
             <div class="titulo-impactos">
                 <h1>Impactos na sociedade </h1>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="seperacao">
-                    <img src="./img/X.png" alt="">
+                    <h1>X</h1>
                 </div>
                 <div class="card-rigth">
                     <H1>Impactos Positivos</H1>
@@ -184,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="vicios-container">
+        <section class="vicios-container" id="vicios">
             <p class="vicio-title">Tipos de Vício</p>
             <div class="banner-vicios-container">
                 <img src="./img/vicios-redes-sociais.png" alt="Imagem">
@@ -193,17 +193,17 @@
             </div>
             <p class="vicio-text">As redes sociais são projetadas para serem altamente viciantes, com notificações constantes e um fluxo contínuo de conteúdo. O "like", o "comentário" e as visualizações geram uma sensação de recompensa, o que leva os usuários a buscar mais atenção e validação, frequentemente.</p>
             <div class="banner-vicios-container">
-                <p class="vicio-subtitle">Vícios em redes sociais</p>
+                <p class="vicio-subtitle">Vício em jogos online</p>
                 <img src="./img/Vicios_2.png" alt="Imagem">
             </div>
             <p class="vicio-text">Jogos como MMORPGs (jogos de RPG online massivos) e outros jogos competitivos podem consumir horas e horas do tempo de um indivíduo, levando-o a negligenciar responsabilidades e interações sociais no mundo real.</p>
             <div class="banner-vicios-container">
                 <img src="./img/vicios-compra-online.png" alt="Imagem">
-                <p class="vicio-subtitle">Vícios em redes sociais</p>
+                <p class="vicio-subtitle">Vício em compras online</p>
             </div>
             <p class="vicio-text">A facilidade de comprar produtos a qualquer momento, sem sair de casa, pode levar algumas pessoas a desenvolverem compulsão por compras, sem controle sobre os gastos.</p>
         </section>
-        <section class="segurança">
+        <section class="segurança" id="seguranca">
             <div class="titulo-seguranca">
                 <h1>Como é feita sua segurança?</h1>
             </div>
@@ -230,8 +230,68 @@
                     </div>
                 </div>
             </div>
-            <div class="full-card">
-                <img src="./img/Untitled.png" alt="">
+            <div class="lista-container">
+                <h3>Como se proteger virtualmente!</h3>
+                <div class="lista">
+                    <ul>
+                        <li class="errado">❌ Usar a mesma senha em vários sites</li>
+                        <li class="errado">❌ Clicar em links suspeitos ou desconhecidos</li>
+                        <li class="errado">❌ Ignorar atualizações de sistema e aplicativos</li>
+                        <li class="errado">❌ Usar Wi-Fi público sem proteção (como VPN) <br>
+                        <span style="font-size: 12px;"> para saber mais sobre o VPN <a href="https://www.kaspersky.com.br/resource-center/definitions/what-is-a-vpn" style="color: red; text-decoration: underline;"><b>clique aqui</b></a>
+                        </span></li>
+                        <li class="errado">❌ Desativar o antivírus ou firewall</li>
+                        <li class="errado">❌ Acreditar em tudo que vê na internet sem checar fontes</li>
+                        <li class="errado">❌ Baixar arquivos ou apps de fontes não confiáveis</li><br>
+                    </ul>
+                    <ul>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Use senhas fortes e diferentes <br> <span style="font-size: 12px;">para acessar um gerador de senhas <a href="https://www.lastpass.com/pt/features/password-generator" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
+                        </span></li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Ative a autenticação em dois fatores (2FA)<br> <span style="font-size: 12px;">para saber mais sobre autenticação em dois fatores  <a href="https://www.lastpass.com/pt/features/password-generator" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
+                        </span></li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Mantenha seus dispositivos atualizados</li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Cuidado com links e e-mails suspeitos<br> <span style="font-size: 12px;">para saber como indentificar links e e-mails suspeitos  <a href="https://www.globalsign.com/pt-br/blog/onze-dicas-para-identificar-emails-maliciosos" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
+                        </span></li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Use antivírus e firewall<br> <span style="font-size: 12px;">para saber mais sobre firewall <a href="https://www.kaspersky.com.br/resource-center/definitions/firewall" style="color: #00DBAB; text-decoration: underline;"><b>clique aqui</b></a>
+                        </span></li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Navegue por conexões seguras</li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Controle sua privacidade</li>
+                        <li class="certo"><span style="color: #00DBAB;">✔</span> Fique atento e bem-informado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="futuro" id="futuro">
+            <div class="apresentacao_futuro">
+                <div class="imagem_apresentacao">
+                    <img src="./img/Futuro_1.png" alt="apresentação_futuro">
+                </div>
+                <h1>COMO SE PREPARAR PARA O FUTURO <br>DA INTERNET?<br></h1>
+                <br>
+                <p>O futuro da internet será cada vez mais moldado por<br> tecnologias disruptivas como <span>inteligência artificial,<br>blockchain, automação e realidade aumentada</span>. Essas <br> inovações estão transformando o modo como trabalhamos, <br> nos comunicamos e consumimos informação. Para <br>acompanhar esse ritmo acelerado de mudanças, o <br>conhecimento se torna a principal ferramenta de<br> preparação.</p>
+            </div>
+            <div class="imagens_futuro">
+                <div class="imagem1_futuro">
+                    <img src="./img/Futuro_2.png" alt="Imagem do Futuro da INternet" class="futuro_2">
+
+                    <img src="./img/BlockChain.png" alt="Imagem do Futuro da INternet" class="blockchain">
+                </div>
+                <div class="imagens-futuro-text">
+                    <div>
+                        <p>IA, liderança digital, inteligência emocional e aprendizado contínuo serão as habilidades mais valorizadas até 2025.</p>
+                    </div>
+                    <div>
+                        <p>A alfabetização digital é essencial para usar a tecnologia com segurança, identificar fake news e agir com responsabilidade, fortalecendo a cidadania e a empregabilidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <img src="./img/soft-skills-image.png" alt="">
+                <div>
+                    <p>Soft skills como empatia, criatividade e pensamento crítico serão essenciais na era da automação.</p>
+                    <p>Unir técnica e sensibilidade humana impulsiona inovação, solução de problemas e liderança com propósito.</p>
+                </div>
+
             </div>
         </section>
     </main>
@@ -242,7 +302,7 @@
                 <p>Nossa sala é formada por apenas 11 alunos mas nem por isso deixamos de entregar a qualidade em nossos projetos. 3D a melhor sala do Antonieta Borges!
                 </p>
             </div>
-            <img src="./img/sala-imagem.png" alt="">
+            <img src="./img/foto-da-sala.jpg" alt="">
         </div>
         <h2>Colaboradores</h2>
         <div class="colaboradores-container">
@@ -306,7 +366,7 @@
                 </ul>
             </div>
             <div class="footer-form">
-                <button class="formBtn" id="formBtn">Para nos ajudar preencha o <strong>formulario</strong></button>
+                <a class="formBtn" id="formBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSdMpnrCdPON1GlUJ15nulVvkfKs68WFoH_YkMd3jV8L9p55sA/viewform?usp=header" target="_blank">Para nos ajudar preencha o formulário</a>
 
             </div>
         </div>
@@ -321,8 +381,8 @@
             </div>
             <div class="social-media">
                 <ul>
-                    <li><strong>Redes:</strong></li>
-                    <li><a href="">Instagram</a></li>
+                    <li>Redes:</li>
+                    <li><a href="https://www.instagram.com/3d.aba_/" target="_blank">Instagram</a></li>
                     <li><a href="">Tiktok</a></li>
                     <li><a href="">Linkedin</a></li>
                 </ul>
@@ -330,5 +390,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
