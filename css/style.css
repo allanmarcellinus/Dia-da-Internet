@@ -5,7 +5,6 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #022840, #0568A6);
     background-repeat: no-repeat;
 }
 header{
@@ -74,9 +73,11 @@ header{
     width: 70px;
 }
 main{
+    background: linear-gradient(to bottom, #000000,#000000,#022840,#022840,#022840,#0568A6, #0568A6,#022e3e);
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -2;
 }
 
 /* Parte inicial */
@@ -141,6 +142,7 @@ main{
 /* Botoes */
 
 .apresentacao {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
